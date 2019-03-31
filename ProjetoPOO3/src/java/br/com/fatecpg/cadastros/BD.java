@@ -20,21 +20,21 @@ public class BD {
                      clientes = new ArrayList <>();
                      Cliente c1 = new Cliente();
                      c1.setNome("Fulano");
-                     c1.setCpf(" ");
-                     c1.setRg(" ");
+                     c1.setCpf("123456 ");
+                     c1.setRg("654321 ");
                      c1.setFone("00000000");
                      c1.setEmail("rafaelsansousa@hotmail.com");
-                     c1.setEndereco(" ");
+                     c1.setEndereco("Rua Um ");
                      clientes.add(c1);
                      
                      
                      Cliente c2 = new Cliente();
-                     c2.setNome("Fulano");
-                     c2.setCpf(" ");
-                     c2.setRg(" ");
+                     c2.setNome("Beltrano");
+                     c2.setCpf("0000000 ");
+                     c2.setRg(" 111111");
                      c2.setFone("00000000");
-                     c2.setEmail("rafaelsansousa@hotmail.com");
-                     c2.setEndereco(" ");
+                     c2.setEmail("rafael@hotmail.com");
+                     c2.setEndereco("Rua Dois");
                      clientes.add(c2);
                      
                 }
