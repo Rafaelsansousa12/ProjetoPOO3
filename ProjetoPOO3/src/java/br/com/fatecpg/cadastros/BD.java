@@ -11,7 +11,8 @@ import java.util.ArrayList;
  *
  * @author Rafael Sousa
  */
-public class BD {
+public class BD
+{
  private static ArrayList<Cliente> clientes;
         public static ArrayList<Cliente> getClientes()
         {
@@ -39,5 +40,34 @@ public class BD {
                      
                 }
                 return clientes;
+        }
+        
+        private static ArrayList<Fornecedor> fornecedores;
+        public static ArrayList<Fornecedor> getFornecedores()
+        {
+                if (fornecedores == null) 
+                {
+                     fornecedores = new ArrayList <>();
+                     Fornecedor f1 = new Fornecedor();
+                     f1.setNome("Fulano");
+                     f1.setRazao_social("123456 ");
+                     f1.setEmail("654321 ");
+                     f1.setFone("00000000");
+                     f1.setEndereco("rafaelsansousa@hotmail.com");
+                     
+                     fornecedores.add(f1);
+                     
+                     
+                     Fornecedor f2 = new Fornecedor();
+                     f1.setNome("Fulano");
+                     f1.setRazao_social("123456 ");
+                     f1.setEmail("654321 ");
+                     f1.setFone("00000000");
+                     f1.setEndereco("rafaelsansousa@hotmail.com");
+                     
+                     fornecedores.add(f2);
+                     
+                }
+                return fornecedores;
         }
 }
