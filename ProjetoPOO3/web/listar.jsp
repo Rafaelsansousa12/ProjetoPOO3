@@ -23,8 +23,11 @@
                   {
                     Cliente c = new Cliente();
                     c.setNome(request.getParameter("nome"));
-                    c.setFone(request.getParameter("fone"));
+                    c.setCpf(request.getParameter("cpf"));
+                    c.setRg(request.getParameter("rg"));
                     c.setEmail(request.getParameter("email"));
+                    c.setFone(request.getParameter("fone"));
+                    c.setEndereco(request.getParameter("endereco"));
                     BD.getClientes().add(c);                    
                           
                   }
@@ -35,11 +38,14 @@
                {
                   if (request.getParameter("alterar").equals("Sim"))
                   {
-                     int index = Integer.parseInt(request.getParameter("index"));
+                     int index = Integer.parseInt(request.getParameter("listar"));
                     Cliente c = new Cliente( );
                     c.setNome(request.getParameter("nome"));
-                    c.setFone(request.getParameter("fone"));
+                    c.setCpf(request.getParameter("cpf"));
+                    c.setRg(request.getParameter("rg"));
                     c.setEmail(request.getParameter("email"));
+                    c.setFone(request.getParameter("fone"));
+                    c.setEndereco(request.getParameter("endereco"));
                     BD.getClientes( ).set(index, c);
                           
                  }
@@ -50,7 +56,7 @@
                 {
                   if (request.getParameter("excluir").equals("Sim"))
                   {
-                  int index = Integer.parseInt(request.getParameter("index"));
+                  int index = Integer.parseInt(request.getParameter("listar"));
                   BD.getClientes().remove(index); 
                   }
                   response.sendRedirect(request.getRequestURI());
