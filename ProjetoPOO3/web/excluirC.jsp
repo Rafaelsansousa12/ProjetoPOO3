@@ -23,7 +23,7 @@
         
         <%int index = Integer.parseInt(request.getParameter("index"));%>
         <%Cliente c = BD.getClientes().get(index);%>
-        <form action="listar.jsp" >
+        <form action="listarC.jsp" >
             
             <b>Índice:  <u><%=index%></u></b>
             <b>Nome:  <u><%=c.getNome()%></u></b>
@@ -37,7 +37,7 @@
             <h2>Deseja excluir o contato?</h2>
             <input type="submit" name="excluir" value="Sim"/>
             <input type="submit" name="excluir" value="Não"/>
-            <input type="hidden" name="listar" value="<%=index%>" />
+            <input type="hidden" name="listarC" value="<%=index%>" />
             
         </form>
         

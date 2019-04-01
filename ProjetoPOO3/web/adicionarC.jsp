@@ -24,7 +24,7 @@
         
         <h1>Clientes</h1>
         <h2>Adicionar</h2>
-        <form action="listar.jsp">
+        <form action="listarC.jsp">
             
             Nome:
             <br/><input type="text" name="nome"/>

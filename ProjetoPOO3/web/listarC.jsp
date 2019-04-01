@@ -38,7 +38,7 @@
                {
                   if (request.getParameter("alterar").equals("Sim"))
                   {
-                     int index = Integer.parseInt(request.getParameter("listar"));
+                     int index = Integer.parseInt(request.getParameter("listarC"));
                     Cliente c = new Cliente( );
                     c.setNome(request.getParameter("nome"));
                     c.setCpf(request.getParameter("cpf"));
@@ -56,7 +56,7 @@
                 {
                   if (request.getParameter("excluir").equals("Sim"))
                   {
-                  int index = Integer.parseInt(request.getParameter("listar"));
+                  int index = Integer.parseInt(request.getParameter("listarC"));
                   BD.getClientes().remove(index); 
                   }
                   response.sendRedirect(request.getRequestURI());
@@ -74,7 +74,7 @@
     <body>
         
         <h1>Clientes</h1>      
-        <h2><a href="adicionar.jsp">Adicionar Contato</a></h2>
+        <h2><a href="adicionarC.jsp">Adicionar Contato</a></h2>
         <h2>Lista</h2>
         
         <table border="1">
@@ -101,8 +101,8 @@
                         <td><%=c.getFone() %></td>
                         <td><%=c.getEndereco() %></td>
                         <td>
-                            <a href="alterar.jsp?index=<%=index%>">Alterar</a>
-                            <a href="excluir.jsp?index=<%=index%>">Excluir</a>
+                            <a href="alterarC.jsp?index=<%=index%>">Alterar</a>
+                            <a href="excluirC.jsp?index=<%=index%>">Excluir</a>
                         </td>                  
                                                 
                     </tr>
