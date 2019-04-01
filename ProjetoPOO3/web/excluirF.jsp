@@ -17,20 +17,20 @@
     
     <body>
         
-        <h1>CFornecedores</h1>
+        <h1>Fornecedores</h1>
         <h2>Excluir</h2>
         
         <%int index = Integer.parseInt(request.getParameter("index"));%>
         <%Fornecedor c = BD.getFornecedores().get(index);%>
         <form action="listarF.jsp" >
             
-            <b>Índice:  <u><%=index%></u></b>
-            <b>Nome:  <u><%=c.getNome()%></u></b>
-            <b>CPF:  <u><%=c.getRazao_social()%></u></b>
-            <b>RG:  <u><%=c.getCnpj()%></u></b>
-            <b>E-mail:  <u><%=c.getEmail()%></u></b>
-            <b>Telefone: <u><%=c.getFone()%></u></b>
-            <b>Endereço:  <u><%=c.getEndereco()%></u></b>
+            <b>Índice:  <u><%=index%></u></b><br/>
+            <b>Nome:  <u><%=c.getNome()%></u></b><br/>
+            <b>CPF:  <u><%=c.getRazao_social()%></u></b><br/>
+            <b>RG:  <u><%=c.getCnpj()%></u></b><br/>
+            <b>E-mail:  <u><%=c.getEmail()%></u></b><br/>
+            <b>Telefone: <u><%=c.getFone()%></u></b><br/>
+            <b>Endereço:  <u><%=c.getEndereco()%></u></b><br/>
             <hr/>
             
             <h2>Deseja excluir o Fornecedor?</h2>

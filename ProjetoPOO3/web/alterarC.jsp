@@ -24,7 +24,7 @@
         <%Cliente c = BD.getClientes().get(index);%>
         <form action="listarC.jsp" >
             
-            <b>Índice: <u><%=index%></u></b>
+            <b>Índice: <u><%=index%></u></b><br/>
             <br/>Nome:
             <br/><input type="text" name="nome" value="<%=c.getNome()%>" /> 
             <br/>CPF:

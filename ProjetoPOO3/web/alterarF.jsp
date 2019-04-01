@@ -24,7 +24,7 @@
         <%Fornecedor c = BD.getFornecedores().get(index);%>
         <form action="listarF.jsp" >
             
-            <b>Índice: <u><%=index%></u></b>
+            <b>Índice: <u><%=index%></u></b><br/>
             <br/>Nome:
             <br/><input type="text" name="nome" value="<%=c.getNome()%>" /> 
             <br/>Razão Social:
@@ -39,7 +39,7 @@
             <br/><input type="text" name="endereco" value="<%=c.getEndereco()%>" /> 
             <hr/>
             
-            <h2>Deseja alterar o cliente?</h2>
+            <h2>Deseja alterar o fornecedor?</h2>
             <input type="submit" name="alterar" value="Sim"/>
             <input type="submit" name="alterar" value="Não"/>
             <input type="hidden" name="listarF" value="<%=index%>" />

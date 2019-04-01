@@ -25,13 +25,13 @@
         <%Cliente c = BD.getClientes().get(index);%>
         <form action="listarC.jsp" >
             
-            <b>Índice:  <u><%=index%></u></b>
-            <b>Nome:  <u><%=c.getNome()%></u></b>
-            <b>CPF:  <u><%=c.getCpf()%></u></b>
-            <b>RG:  <u><%=c.getRg()%></u></b>
-            <b>E-mail:  <u><%=c.getEmail()%></u></b>
-            <b>Telefone: <u><%=c.getFone()%></u></b>
-            <b>Endereço:  <u><%=c.getEndereco()%></u></b>
+            <b>Índice:  <u><%=index%></u></b><br/>
+            <b>Nome:  <u><%=c.getNome()%></u></b><br/>
+            <b>CPF:  <u><%=c.getCpf()%></u></b><br/>
+            <b>RG:  <u><%=c.getRg()%></u></b><br/>
+            <b>E-mail:  <u><%=c.getEmail()%></u></b><br/>
+            <b>Telefone: <u><%=c.getFone()%></u></b><br/>
+            <b>Endereço:  <u><%=c.getEndereco()%></u></b><br/>
             <hr/>
             
             <h2>Deseja excluir o cliente?</h2>

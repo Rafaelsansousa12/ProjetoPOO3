@@ -25,7 +25,7 @@
         <hr/>
         <h1>Fornecedores</h1>      
         <h2><a href="adicionarF.jsp">Adicionar Fornecedor</a></h2>
-        <h2><a href="listarC.jsp">Lista de Fornecedores</a></h2>
+        <h2><a href="listarF.jsp">Lista de Fornecedores</a></h2>
         
     </body>
     
