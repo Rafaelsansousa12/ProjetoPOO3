@@ -82,8 +82,8 @@
             <tr style='background-color: lightgray'>
                 <th width='40px'>Código</th>
                  <th width='150px'>Nome</th>
-                 <th width='75px'>CPF</th>
-                 <th width='75px'>RG</th>
+                 <th width='75px'>Razão Social</th>
+                 <th width='75px'>CNPJ</th>
                 <th width='120px'>E-mail</th>
                 <th width='60px'>Telefone</th>
                 <th width='120px'>Endereço</th>
@@ -114,8 +114,11 @@
                     
                     <br/>
         
-        <h4><a href="index.jsp">Volta para Página Principal</a></h4>
-        
+       <table>
+           <tr><td><h5><a href="index.jsp">Volta para Página Principal</a></h5></td>
+           <td width="485px"></td>
+           <td><div aling="right"><h5><a href="adicionarF.jsp">Adicionar Fornecedor</a></div></h5>
+       </table>
     </body>
      <%@include file="WEB-INF/jspf/footer.jspf" %>
 </html>

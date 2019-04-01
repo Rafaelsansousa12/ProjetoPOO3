@@ -17,12 +17,14 @@
 
 <footer class="footer">
     <div align="center">
-        <hr/><br/>
-        <h6>Projeto nº 3 - Programação Orientada a Objeto - FATECPG </h6>
+        <hr/>
+        <ul style="background-color: black; color:black;">.</ul>
+        <ul style="background-color: black; color:white;"><h6>Projeto nº 3 - Programação Orientada a Objeto - FATECPG </h6></ul>
         <%
             DateFormat df = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");
             Date today = Calendar.getInstance().getTime();
         %>
-        <h6><%=df.format(today)%></h6>
+        <ul style="background-color: black; color:white;"><h6><%=df.format(today)%></h6></ul>
+        <ul style="background-color: black; color:black;">.</ul>
     </div>
 </footer>

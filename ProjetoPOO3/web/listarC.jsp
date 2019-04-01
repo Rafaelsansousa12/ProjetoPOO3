@@ -113,9 +113,12 @@
             </table></h6>
                     
                     <br/>
-        
-        <h4><a href="index.jsp">Volta para Página Principal</a></h4>
-        
+                     <table>
+           <tr><td><h5><a href="index.jsp">Volta para Página Principal</a></h5></td>
+           <td width="505px"></td>
+           <td><div aling="right"><h5><a href="adicionarC.jsp">Adicionar Cliente</a></div></h5>
+       </table>
+    </body>
     </body>
      <%@include file="WEB-INF/jspf/footer.jspf" %>
 </html>

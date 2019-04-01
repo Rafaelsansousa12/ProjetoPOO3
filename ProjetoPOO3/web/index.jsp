@@ -28,10 +28,10 @@
            <br/>
            <br/>
            <ul style='background-color: greenyellow'>
-           <br/> .
+               <br/><ul style="color:greenyellow;"> .</ul>
            <h1>Bem-vindo ao nosso site! <br/>
                Aqui você pode cadastrar seus clientes e fornecedores!  </h1>
-           <br/> .
+           <br/><ul style="color:greenyellow;"> .</ul>
            </ul>
            <br/> 
            <br/>
