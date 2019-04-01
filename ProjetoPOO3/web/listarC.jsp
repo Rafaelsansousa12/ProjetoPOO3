@@ -79,8 +79,8 @@
         <br/>
         
         <h6><table border='1' style='text-align:center' align='center' cellspacing='0' cellpadding='2'>
-            <tr>
-                <th>Código</th>
+            <tr style='background-color: lightgray'>
+                <th width='40px'>Código</th>
                  <th width='150px'>Nome</th>
                  <th width='75px'>CPF</th>
                  <th width='75px'>RG</th>
@@ -114,7 +114,7 @@
                     
                     <br/>
         
-        <h4><a href="index.jsp"><-- Volta para Página Principal</a></h4>
+        <h4><a href="index.jsp">Volta para Página Principal</a></h4>
         
     </body>
      <%@include file="WEB-INF/jspf/footer.jspf" %>

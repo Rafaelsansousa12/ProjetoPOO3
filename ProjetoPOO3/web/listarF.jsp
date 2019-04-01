@@ -63,25 +63,30 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <%@include file="WEB-INF/jspf/header.jspf" %>
         <title>Listar - Fornecedores</title>
-        
+         <style>
+            p.alinha{padding-left: 1.8em }
+           
+        </style>
     </head>
     
     <body>
+        <br/>
+        <br/>
+        <br/>
+        <hr/>
+        <h1><ul style="background-color:greenyellow"><p class="alinha">Lista de Fornecedores</p></ul></h1>
+        <br/>
         
-        <h1>Fornecedores</h1>      
-        <h2><a href="adicionarF.jsp">Adicionar Fornecedor</a></h2>
-        <h2>Lista</h2>
-        
-        <table border="1">
-            <tr>
-                <th>Índice</th>
-                 <th>Nome</th>
-                 <th>Razão Social</th>
-                 <th>CNPJ</th>
-                <th>E-mail</th>
-                <th>Telefone</th>
-                <th>Endereço</th>
-                <th>Editar</th>
+        <table border='1' style='text-align:center' align='center' cellspacing='0' cellpadding='2'>
+            <tr style='background-color: lightgray'>
+             <th width='40px'>Código</th>
+                 <th width='150px'>Nome</th>
+                 <th width='75px'>Razão Social</th>
+                 <th width='75px'>CNPJ</th>
+                <th width='120px'>E-mail</th>
+                <th width='60px'>Telefone</th>
+                <th width='120px'>Endereço</th>
+                <th width='50px'>Editar</th>
             </tr>
             
             <%for (Fornecedor f: BD.getFornecedores()) {%>
@@ -96,8 +101,8 @@
                         <td><%=f.getFone() %></td>
                         <td><%=f.getEndereco() %></td>
                         <td>
-                            <a href="alterarF.jsp?index=<%=index%>">Alterar</a>
-                            <a href="excluirF.jsp?index=<%=index%>">Excluir</a>
+                            <button><a href="alterarF.jsp?index=<%=index%>">Alterar</a></button>
+                            &emsp;<button> <a href="excluirF.jsp?index=<%=index%>">Excluir</a></button>
                         </td>                  
                                                 
                     </tr>
@@ -107,8 +112,8 @@
                     
                      <br/>
         
-        <h2><a href="index.jsp">HOME</a></h2>
+        <h2><a href="index.jsp">Voltar a Página Principal</a></h2>
         
     </body>
-    
+    <%@include file="WEB-INF/jspf/footer.jspf" %>
 </html>
