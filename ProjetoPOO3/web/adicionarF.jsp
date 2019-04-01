@@ -1,6 +1,6 @@
 <%-- 
-    Document   : adicionarF
-    Created on : 31/03/2019, 21:56:02
+    Document   : adicionar
+    Created on : 31/03/2019, 20:30:57
     Author     : Rafael Sousa
 --%>
 
@@ -16,38 +16,52 @@
         
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <%@include file="WEB-INF/jspf/header.jspf" %>
-        <title>Adicionar  - Fornecedor</title>
         
+        <title>Adicionar  - Fornecedor</title>
+        <style>p.alinha{padding-left: 1.8em }
+           
+        </style>
     </head>
     
     <body>
-        
-        <h1>Fornecedores</h1>
-        <h2>Adicionar</h2>
+        <br/>
+        <br/>
+        <br/>
+        <hr/>
+        <h1><ul style="background-color:greenyellow"><p class="alinha">Adicionar Fornecedor</p></ul></h1>
+        <h3><p class="alinha"> Preencha os campos :</p></h3>
         <form action="listarF.jsp">
             
-            Nome:
-            <br/><input type="text" name="nome"/>
-            <br/>Razão Social:
-            <br/><input type="text" name="razao_social"/>
-            <br/>CNPJ:
-            <br/><input type="text" name="cnpj"/>
-            <br/>E-mail:
-            <br/><input type="text" name="email"/>
-            <br/>Telefone:
-            <br/><input type="text" name="fone"/>
-            <br/>Endereço:
-            <br/><input type="text" name="endereco"/>
+            <table >
+                
+                <tr><td><p class="alinha">Nome:</p></td>
+                    <td><input type="text" name="nome"/></td>
+                </tr>
+                <tr><td><p class="alinha">Razão Social:</p></td>
+                    <td><input type="text" name="razao_social"/></td>
+                </tr>
+                <tr><td><p class="alinha">CNPJ:</p></td>
+                    <td><input type="text" name="cnpj"/></td>
+                </tr>
+                <tr><td><p class="alinha">E-mail:</p></td>
+                    <td><input type="text" name="email"/></td>
+                </tr>
+                <tr><td><p class="alinha">Telefone:</p></td>
+                    <td><input type="text" name="fone"/></td>
+                <tr><td><p class="alinha">Endereço:</p></td>
+                    <td><input type="text" name="endereco"/></td>
+                </p>
+            </table>
+            <br/>
+            <br/>
             <hr/>
-            
-            <h2>Deseja incluir o novo fornecedor?</h2>
-            <input type="submit" name="adicionar" value="Sim"/>
-            <input type="submit" name="adicionar" value="Não"/>           
-            
-        </form>
-        
-       
-        </table>
-        
+            <br/>
+            <h3><div aling="center">Cadastrar novo fornecedor?
+                    &emsp;<input type="submit" name="adicionar" value="Sim"/>
+                    <input type="submit" name="adicionar" value="Não"/>  </h3>         
+            </div>
+            <br/>
+        </form> 
     </body>
+    <%@include file="WEB-INF/jspf/footer.jspf" %>
 </html>

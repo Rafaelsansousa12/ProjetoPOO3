@@ -18,7 +18,9 @@
         <%@include file="WEB-INF/jspf/header.jspf" %>
         
         <title>Adicionar  - Cliente</title>
-        <style>p.alinha{padding-left: 1.8em }</style>
+        <style>p.alinha{padding-left: 1.8em }
+           
+        </style>
     </head>
     
     <body>
@@ -26,34 +28,39 @@
         <br/>
         <br/>
         <hr/>
-        <h1><p class="alinha">Adicionar Clientes</p></h1>
-        <h2> Preencha os campos :</h2>
+        <h1><ul style="background-color:greenyellow"><p class="alinha">Adicionar Clientes</p></ul></h1>
+        <h3><p class="alinha"> Preencha os campos :</p></h3>
         <form action="listarC.jsp">
             
-            <table>
-                <p class="alinha">
-                <tr><td>Nome:</td>
+            <table >
+                
+                <tr><td><p class="alinha">Nome:</p></td>
                     <td><input type="text" name="nome"/></td>
                 </tr>
-                <tr><td>CPF:</td>
+                <tr><td><p class="alinha">CPF:</p></td>
                     <td><input type="text" name="cpf"/></td>
                 </tr>
-                <tr><td>RG:</td>
+                <tr><td><p class="alinha">RG:</p></td>
                     <td><input type="text" name="rg"/></td>
                 </tr>
-                <tr><td>E-mail:</td>
+                <tr><td><p class="alinha">E-mail:</p></td>
                     <td><input type="text" name="email"/></td>
                 </tr>
-                <tr><td>Telefone:</td>
+                <tr><td><p class="alinha">Telefone:</p></td>
                     <td><input type="text" name="fone"/></td>
-                <tr><td>Endereço:</td>
+                <tr><td><p class="alinha">Endereço:</p></td>
                     <td><input type="text" name="endereco"/></td>
                 </p>
             </table>
-            <h2>Deseja incluir o novo cliente?</h2>
-            <input type="submit" name="adicionar" value="Sim"/>
-            <input type="submit" name="adicionar" value="Não"/>           
-            
+            <br/>
+            <br/>
+            <hr/>
+            <br/>
+            <h3><div aling="center">Cadastrar novo cliente?
+                    &emsp;<input type="submit" name="adicionar" value="Sim"/>
+                    <input type="submit" name="adicionar" value="Não"/>  </h3>         
+            </div>
+            <br/>
         </form> 
     </body>
     <%@include file="WEB-INF/jspf/footer.jspf" %>

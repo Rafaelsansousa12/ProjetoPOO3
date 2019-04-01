@@ -64,25 +64,30 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <%@include file="WEB-INF/jspf/header.jspf" %>
         <title>Listar - Clientes</title>
-        
+        <style>
+            p.alinha{padding-left: 1.8em }
+           
+        </style>
     </head>
     
     <body>
+        <br/>
+        <br/>
+        <br/>
+        <hr/>
+        <h1><ul style="background-color:greenyellow"><p class="alinha">Lista de Clientes</p></ul></h1>
+        <br/>
         
-        <h1>Clientes</h1>      
-        <h2><a href="adicionarC.jsp">Adicionar Cliente</a></h2>
-        <h2>Lista</h2>
-        
-        <table border="1">
+        <h6><table border='1' style='text-align:center' align='center' cellspacing='0' cellpadding='2'>
             <tr>
-                <th>Índice</th>
-                 <th>Nome</th>
-                 <th>CPF</th>
-                 <th>RG</th>
-                <th>E-mail</th>
-                <th>Telefone</th>
-                <th>Endereço</th>
-                <th>Editar</th>
+                <th>Código</th>
+                 <th width='150px'>Nome</th>
+                 <th width='75px'>CPF</th>
+                 <th width='75px'>RG</th>
+                <th width='120px'>E-mail</th>
+                <th width='60px'>Telefone</th>
+                <th width='120px'>Endereço</th>
+                <th width='50px'>Editar</th>
             </tr>
             
             <%for (Cliente c: BD.getClientes()) {%>
@@ -96,20 +101,21 @@
                         <td><%=c.getEmail() %></td>
                         <td><%=c.getFone() %></td>
                         <td><%=c.getEndereco() %></td>
-                        <td>
-                            <a href="alterarC.jsp?index=<%=index%>">Alterar</a>
-                            <a href="excluirC.jsp?index=<%=index%>">Excluir</a>
+                        
+                        <td padding='5px'>
+                            <button><a href="alterarC.jsp?index=<%=index%>">Alterar</a></button>
+                            &ensp; <button><a href="excluirC.jsp?index=<%=index%>">Excluir</a></button>
                         </td>                  
-                                                
+                                                 
                     </tr>
                     <%}%>              
            
-        </table>
+            </table></h6>
                     
                     <br/>
         
-        <h2><a href="index.jsp">HOME</a></h2>
+        <h4><a href="index.jsp"><-- Volta para Página Principal</a></h4>
         
     </body>
-    
+     <%@include file="WEB-INF/jspf/footer.jspf" %>
 </html>
