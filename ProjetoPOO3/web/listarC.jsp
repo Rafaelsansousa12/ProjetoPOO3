@@ -87,7 +87,7 @@
                 <th width='120px'>E-mail</th>
                 <th width='60px'>Telefone</th>
                 <th width='120px'>Endereço</th>
-                <th width='50px'>Editar</th>
+                <th width='100px'>Editar</th>
             </tr>
             
             <%for (Cliente c: BD.getClientes()) {%>

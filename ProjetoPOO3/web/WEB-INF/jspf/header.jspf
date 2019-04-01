@@ -75,9 +75,9 @@ width:200px;
                       <li><a href="adicionarF.jsp">Adicionar Fornecedor</a></li>                                          
                 </ul>
             </li> 
-            
-        
+  </ul>              
  </nav> 
+
 </hr>
 </head>
 </html>

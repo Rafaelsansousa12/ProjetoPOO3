@@ -12,44 +12,66 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Alterar - Cliente</title>
+        <%@include file="WEB-INF/jspf/header.jspf" %> 
+        <style>
+            p.alinha{padding-left: 1.8em }
            
+        </style>
     </head>
     
     <body>
+        <br/>
+        <br/>
+        <br/>
+        <hr/>
+        <h1><ul style="background-color:greenyellow"><p class="alinha">Alterar Clientes</p></ul></h1>
         
-        <h1>Clientes</h1>
-        <h2>Alterar</h2>
+        <br/>
         
          <%int index = Integer.parseInt(request.getParameter("index"));%>
         <%Cliente c = BD.getClientes().get(index);%>
         <form action="listarC.jsp" >
-            
-            <b>Índice: <u><%=index%></u></b><br/>
-            <br/>Nome:
-            <br/><input type="text" name="nome" value="<%=c.getNome()%>" /> 
-            <br/>CPF:
-            <br/><input type="text" name="cpf" value="<%=c.getCpf()%>" /> 
-            <br/>RG:
-            <br/><input type="text" name="rg" value="<%=c.getRg()%>" /> 
-            <br/>E-mail:
-            <br/><input type="text" name="email" value="<%=c.getEmail()%>" /> 
-            <br/>Telefone:
-            <br/><input type="text" name="email" value="<%=c.getFone()%>" /> 
-            <br/>Endereço:
-            <br/><input type="text" name="endereco" value="<%=c.getEndereco()%>" /> 
+            <table>
+                <tr><td><p class="alinha"><b>Índice: </p></td>
+                    <td><u><%=index%></u></b><br/></td>
+                </tr>
+                
+                <tr><td><p class="alinha">Nome:</p></td>
+                    <td><input type="text" name="nome" value="<%=c.getNome()%>" /></td>
+                </tr>
+                <tr><td><p class="alinha">CPF:</p></td>
+                    <td><input type="text" name="cpf" value="<%=c.getCpf()%>" /></td>
+                </tr>
+                <tr><td><p class="alinha">RG:</p></td>
+                    <td><input type="text" name="rg" value="<%=c.getRg()%>" /></td>
+                </tr>
+                <tr><td><p class="alinha">E-mail:</p></td>
+                    <td><input type="text" name="email" value="<%=c.getEmail()%>" /></td> 
+                </tr>
+                <tr><td><p class="alinha">Telefone:</p></td>
+                    <td><input type="text" name="email" value="<%=c.getFone()%>" /></td>
+                </tr>
+                <tr><td><p class="alinha">Endereço:</p></td>
+                <td><input type="text" name="endereco" value="<%=c.getEndereco()%>" /></td
+                </tr>
+               
+            </table>
+            <br/>
+            <br/>
             <hr/>
-            
-            <h2>Deseja alterar o cliente?</h2>
-            <input type="submit" name="alterar" value="Sim"/>
-            <input type="submit" name="alterar" value="Não"/>
-            <input type="hidden" name="listarC" value="<%=index%>" />
-        
+            <br/>
+            <h3><div><p class="alinha">Deseja alterar o cliente?
+                <input type="submit" name="alterar" value="Sim"/>
+                <input type="submit" name="alterar" value="Não"/>
+                <input type="hidden" name="listarC" value="<%=index%>" /></h3></p>
+            </div>
+            <br/>
         </form>
             
         
           
         
     </body>
-    
+    <%@include file="WEB-INF/jspf/footer.jspf" %>
 </html>
 

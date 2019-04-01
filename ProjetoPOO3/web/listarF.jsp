@@ -1,8 +1,9 @@
 <%-- 
-    Document   : listarF
-    Created on : 31/03/2019, 21:55:49
+    Document   : listar
+    Created on : 31/03/2019, 20:25:20
     Author     : Rafael Sousa
 --%>
+
 
 <%@page import="br.com.fatecpg.cadastros.BD"%>
 <%@page import="br.com.fatecpg.cadastros.Fornecedor"%>
@@ -62,8 +63,8 @@
         
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <%@include file="WEB-INF/jspf/header.jspf" %>
-        <title>Listar - Fornecedores</title>
-         <style>
+        <title>Listar - Fonecedores</title>
+        <style>
             p.alinha{padding-left: 1.8em }
            
         </style>
@@ -77,19 +78,19 @@
         <h1><ul style="background-color:greenyellow"><p class="alinha">Lista de Fornecedores</p></ul></h1>
         <br/>
         
-        <table border='1' style='text-align:center' align='center' cellspacing='0' cellpadding='2'>
+        <h6><table border='1' style='text-align:center' align='center' cellspacing='0' cellpadding='2'>
             <tr style='background-color: lightgray'>
-             <th width='40px'>Código</th>
+                <th width='40px'>Código</th>
                  <th width='150px'>Nome</th>
-                 <th width='75px'>Razão Social</th>
-                 <th width='75px'>CNPJ</th>
+                 <th width='75px'>CPF</th>
+                 <th width='75px'>RG</th>
                 <th width='120px'>E-mail</th>
                 <th width='60px'>Telefone</th>
                 <th width='120px'>Endereço</th>
-                <th width='50px'>Editar</th>
+                <th width='100px'>Editar</th>
             </tr>
             
-            <%for (Fornecedor f: BD.getFornecedores()) {%>
+           <%for (Fornecedor f: BD.getFornecedores()) {%>
                     <%int index = BD.getFornecedores().indexOf(f);%>
                     
                     <tr>
@@ -100,20 +101,21 @@
                         <td><%=f.getEmail() %></td>
                         <td><%=f.getFone() %></td>
                         <td><%=f.getEndereco() %></td>
-                        <td>
+                                               
+                        <td padding='5px'>
                             <button><a href="alterarF.jsp?index=<%=index%>">Alterar</a></button>
                             &emsp;<button> <a href="excluirF.jsp?index=<%=index%>">Excluir</a></button>
                         </td>                  
-                                                
+                                                 
                     </tr>
                     <%}%>              
            
-        </table>
+            </table></h6>
                     
-                     <br/>
+                    <br/>
         
-        <h2><a href="index.jsp">Voltar a Página Principal</a></h2>
+        <h4><a href="index.jsp">Volta para Página Principal</a></h4>
         
     </body>
-    <%@include file="WEB-INF/jspf/footer.jspf" %>
+     <%@include file="WEB-INF/jspf/footer.jspf" %>
 </html>
