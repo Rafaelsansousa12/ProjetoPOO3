@@ -75,10 +75,10 @@
         <br/>
         <br/>
         <hr/>
-        <h1><ul style="background-color:greenyellow"><p class="alinha">Lista de Clientes</p></ul></h1>
+        <h1><ul style="background-color:greenyellow"><p class="alinha" style="text-align:center;">Lista de Clientes</p></ul></h1>
         <br/>
         
-        <h6><table border='1' style='text-align:center' align='center' cellspacing='0' cellpadding='2'>
+        <h6><table border="1" style="text-align:center; align=center; cellspacing=0; cellpadding=2 solid black; margin-left: 20%;"  >
             <tr style='background-color: lightgray'>
                 <th width='40px'>Código</th>
                  <th width='150px'>Nome</th>

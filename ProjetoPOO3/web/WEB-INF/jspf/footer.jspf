@@ -16,7 +16,7 @@
  
 
 <footer class="footer">
-    <div align="center">
+    <div align="center"  style="position: fixed; width: 100%; bottom: 0;" >
         <hr/>
         <ul style="background-color: black; color:black;">.</ul>
         <ul style="background-color: black; color:white;"><h6>Projeto nº 3 - Programação Orientada a Objeto - FATECPG </h6></ul>
