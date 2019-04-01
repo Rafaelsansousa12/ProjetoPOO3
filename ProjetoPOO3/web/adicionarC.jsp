@@ -15,39 +15,46 @@
     <head>
         
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <%@include file="WEB-INF/jspf/header.jspf" %>
         
         <title>Adicionar  - Cliente</title>
-        
+        <style>p.alinha{padding-left: 1.8em }</style>
     </head>
     
     <body>
-        
-        <h1>Clientes</h1>
-        <h2>Adicionar</h2>
+        <br/>
+        <br/>
+        <br/>
+        <hr/>
+        <h1><p class="alinha">Adicionar Clientes</p></h1>
+        <h2> Preencha os campos :</h2>
         <form action="listarC.jsp">
             
-            Nome:
-            <br/><input type="text" name="nome"/>
-            <br/>CPF:
-            <br/><input type="text" name="cpf"/>
-            <br/>RG:
-            <br/><input type="text" name="rg"/>
-            <br/>E-mail:
-            <br/><input type="text" name="email"/>
-            <br/>Telefone:
-            <br/><input type="text" name="fone"/>
-            <br/>Endereço:
-            <br/><input type="text" name="endereco"/>
-            <hr/>
-            
+            <table>
+                <p class="alinha">
+                <tr><td>Nome:</td>
+                    <td><input type="text" name="nome"/></td>
+                </tr>
+                <tr><td>CPF:</td>
+                    <td><input type="text" name="cpf"/></td>
+                </tr>
+                <tr><td>RG:</td>
+                    <td><input type="text" name="rg"/></td>
+                </tr>
+                <tr><td>E-mail:</td>
+                    <td><input type="text" name="email"/></td>
+                </tr>
+                <tr><td>Telefone:</td>
+                    <td><input type="text" name="fone"/></td>
+                <tr><td>Endereço:</td>
+                    <td><input type="text" name="endereco"/></td>
+                </p>
+            </table>
             <h2>Deseja incluir o novo cliente?</h2>
             <input type="submit" name="adicionar" value="Sim"/>
             <input type="submit" name="adicionar" value="Não"/>           
             
-        </form>
-        
-       
-        </table>
-        
+        </form> 
     </body>
+    <%@include file="WEB-INF/jspf/footer.jspf" %>
 </html>

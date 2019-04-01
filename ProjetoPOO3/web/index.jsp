@@ -13,20 +13,32 @@
     <head>
         
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+         <%@include file="WEB-INF/jspf/header.jspf" %>
         <title>Index - Clientes</title>
+           
+
         
     </head>
     
     <body>
-        
-        <h1>Clientes</h1>      
-        <h2><a href="adicionarC.jsp">Adicionar Cliente</a></h2>
-        <h2><a href="listarC.jsp">Lista de Clientes</a></h2> <br/>
-        <hr/>
-        <h1>Fornecedores</h1>      
-        <h2><a href="adicionarF.jsp">Adicionar Fornecedor</a></h2>
-        <h2><a href="listarF.jsp">Lista de Fornecedores</a></h2>
+       <br/>
+       <div class="corpo" align="center">
+           <br/>
+           <br/>
+           <br/>
+           <br/>
+           <br/>
+           <h1><br/>Bem-vindo ao nosso site! <br/>
+               Aqui você pode cadastrar seus clientes e fornecedores!  </h1>
+           <br/>
+           <br/>
+           <br/>
+           <br/>
+           <br/>
+           <h4>-- Desenvolvido por Alex Sandro , Daianne  e Rafael --</h4>
+       </div>
+       
         
     </body>
-    
+    <%@include file="WEB-INF/jspf/footer.jspf" %>
 </html>
