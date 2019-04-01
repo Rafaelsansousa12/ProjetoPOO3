@@ -12,13 +12,13 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Excluir - Contato</title>
+        <title>Excluir - Clientes</title>
         
     </head>
     
     <body>
         
-        <h1>Contatos</h1>
+        <h1>Clientes</h1>
         <h2>Excluir</h2>
         
         <%int index = Integer.parseInt(request.getParameter("index"));%>
@@ -34,7 +34,7 @@
             <b>Endereço:  <u><%=c.getEndereco()%></u></b>
             <hr/>
             
-            <h2>Deseja excluir o contato?</h2>
+            <h2>Deseja excluir o cliente?</h2>
             <input type="submit" name="excluir" value="Sim"/>
             <input type="submit" name="excluir" value="Não"/>
             <input type="hidden" name="listarC" value="<%=index%>" />

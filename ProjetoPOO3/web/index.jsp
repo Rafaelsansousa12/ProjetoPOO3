@@ -20,8 +20,12 @@
     <body>
         
         <h1>Clientes</h1>      
-        <h2><a href="adicionarC.jsp">Adicionar Contato</a></h2>
-        <h2><a href="listarC.jsp">Lista de Clientes</a></h2> 
+        <h2><a href="adicionarC.jsp">Adicionar Cliente</a></h2>
+        <h2><a href="listarC.jsp">Lista de Clientes</a></h2> <br/>
+        <hr/>
+        <h1>Fornecedores</h1>      
+        <h2><a href="adicionarF.jsp">Adicionar Fornecedor</a></h2>
+        <h2><a href="listarC.jsp">Lista de Fornecedores</a></h2>
         
     </body>
     
