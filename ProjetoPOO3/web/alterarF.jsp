@@ -36,21 +36,21 @@
                     <td> <u><%=index%></u></b><br/></td>
                 </tr>
                 <tr><td><p class="alinha">Nome:</td>
-                    <td><input type="text" name="nome" value="<%=c.getNome()%>" /></td>
+                    <td><input type="text" required=""  name="nome" value="<%=c.getNome()%>" /></td>
             <tr><td><p class="alinha">Razão Social:</td>
-                <td><input type="text" name="razao_social" value="<%=c.getRazao_social()%>" /> </td>
+                <td><input type="text"  required="" name="razao_social" value="<%=c.getRazao_social()%>" /> </td>
             </tr>
             <tr><td><p class="alinha">CNPJ:</td>
-                <td><input type="text" name="cnpj" value="<%=c.getCnpj()%>" /> </td>
+                <td><input type="number" required=""  name="cnpj" value="<%=c.getCnpj()%>" /> </td>
              </tr>    
             <tr><td><p class="alinha">E-mail:</td>
-                <td><input type="text" name="email" value="<%=c.getEmail()%>" /> </td>
+                <td><input type="email" name="email" value="<%=c.getEmail()%>" /> </td>
              </tr>    
             <tr><td><p class="alinha">Telefone:</td>
-                <td><input type="text" name="email" value="<%=c.getFone()%>" /> </td>
+                <td><input pattern="\d{4}-\d{4}$" type="tel" name="fone" value="<%=c.getFone()%>" /> </td>
              </tr>    
             <tr><td><p class="alinha">Endereço:</td>
-                <td><input type="text" name="endereco" value="<%=c.getEndereco()%>" /></td> 
+                <td><input type="text" required=""  name="endereco" value="<%=c.getEndereco()%>" /></td> 
                 
             </table>
             <br/>

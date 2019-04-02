@@ -37,21 +37,21 @@
             <table >
                 
                 <tr><td><p class="alinha">Nome:</p></td>
-                    <td><input type="text" name="nome"/></td>
+                    <td><input type="text" required="" name="nome"/></td>
                 </tr>
                 <tr><td><p class="alinha">CPF:</p></td>
-                    <td><input type="text" name="cpf"/></td>
+                    <td><input type="number" required=""  name="cpf"/></td>
                 </tr>
                 <tr><td><p class="alinha">RG:</p></td>
-                    <td><input type="text" name="rg"/></td>
+                    <td><input type="number" name="rg"/></td>
                 </tr>
                 <tr><td><p class="alinha">E-mail:</p></td>
-                    <td><input type="text" name="email"/></td>
+                    <td><input type="email"   name="email"/></td>
                 </tr>
                 <tr><td><p class="alinha">Telefone:</p></td>
-                    <td><input type="text" name="fone"/></td>
+                    <td><input pattern="\d{4}-\d{4}$"  type="tel" name="fone"/></td>
                 <tr><td><p class="alinha">Endereço:</p></td>
-                    <td><input type="text" name="endereco"/></td>
+                    <td><input type="text" required=""  name="endereco"/></td>
                 </p>
             </table>
             <br/>

@@ -38,22 +38,22 @@
                 </tr>
                 
                 <tr><td><p class="alinha">Nome:</p></td>
-                    <td><input type="text" name="nome" value="<%=c.getNome()%>" /></td>
+                    <td><input type="text"  required="" name="nome" value="<%=c.getNome()%>" /></td>
                 </tr>
                 <tr><td><p class="alinha">CPF:</p></td>
-                    <td><input type="text" name="cpf" value="<%=c.getCpf()%>" /></td>
+                    <td><input type="number" required=""  name="cpf" value="<%=c.getCpf()%>" /></td>
                 </tr>
                 <tr><td><p class="alinha">RG:</p></td>
-                    <td><input type="text" name="rg" value="<%=c.getRg()%>" /></td>
+                    <td><input type="number" name="rg" value="<%=c.getRg()%>" /></td>
                 </tr>
                 <tr><td><p class="alinha">E-mail:</p></td>
-                    <td><input type="text" name="email" value="<%=c.getEmail()%>" /></td> 
+                    <td><input type="email" name="email" value="<%=c.getEmail()%>" /></td> 
                 </tr>
                 <tr><td><p class="alinha">Telefone:</p></td>
-                    <td><input type="text" name="email" value="<%=c.getFone()%>" /></td>
+                    <td><input pattern="\d{4}-\d{4}$" type="tel" name="fone" value="<%=c.getFone()%>" /></td>
                 </tr>
                 <tr><td><p class="alinha">Endereço:</p></td>
-                <td><input type="text" name="endereco" value="<%=c.getEndereco()%>" /></td
+                <td><input type="text" required=""  name="endereco" value="<%=c.getEndereco()%>" /></td
                 </tr>
                
             </table>
