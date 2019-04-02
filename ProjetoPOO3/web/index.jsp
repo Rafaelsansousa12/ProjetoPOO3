@@ -14,13 +14,15 @@
         
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
          <%@include file="WEB-INF/jspf/header.jspf" %>
+         
         <title>Index - Clientes</title>
            
+        
 
         
     </head>
     
-    <body>
+    <body style="background-image: url('index.jpeg');">
        <br/>
        <div class="corpo" align="center">
            <br/>
@@ -33,11 +35,13 @@
                Aqui você pode cadastrar seus clientes e fornecedores!  </h1>
            <br/><ul style="color:greenyellow;"> .</ul>
            </ul>
+           
+           
            <br/> 
            <br/>
            <br/>
            <br/>
-           <h4>-- Desenvolvido por Alex Sandro , Daianne  e Rafael --</h4>
+           <h4 style="position: fixed; bottom: 10%; margin-left: 37%;  color: blue;">-- Desenvolvido por Alex Sandro , Daianne  e Rafael --</h4>
        </div>
        
         
