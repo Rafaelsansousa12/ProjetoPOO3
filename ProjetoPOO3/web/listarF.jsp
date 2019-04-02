@@ -70,24 +70,26 @@
         </style>
     </head>
     
-    <body>
+    <body style="background-color: #CED8F6;">
         <br/>
         <br/>
         <br/>
         <hr/>
-        <h1><ul style="background-color:greenyellow"><p class="alinha">Lista de Fornecedores</p></ul></h1>
+        <h1><ul style="background-color:greenyellow"><p class="alinha" style="text-align:center;">Lista de Fornecedores</p></ul></h1>
         <br/>
         
-        <h6><table border='1' style='text-align:center' align='center' cellspacing='0' cellpadding='2'>
+        <div>
+        <h5><table border="1" style="text-align:center; align=center; cellspacing=0; cellpadding=2 solid black; margin-left: 20%;" >
             <tr style='background-color: lightgray'>
                 <th width='40px'>Código</th>
-                 <th width='150px'>Nome</th>
+                 <th width='200px'>Nome</th>
                  <th width='75px'>Razão Social</th>
                  <th width='75px'>CNPJ</th>
                 <th width='120px'>E-mail</th>
                 <th width='60px'>Telefone</th>
-                <th width='120px'>Endereço</th>
-                <th width='100px'>Editar</th>
+                <th width='200px'>Endereço</th>
+                <th width='100px' colspan="2">Editar</th>
+           
             </tr>
             
            <%for (Fornecedor f: BD.getFornecedores()) {%>
@@ -102,16 +104,16 @@
                         <td><%=f.getFone() %></td>
                         <td><%=f.getEndereco() %></td>
                                                
-                        <td padding='5px'>
-                            <button><a href="alterarF.jsp?index=<%=index%>">Alterar</a></button>
-                            &emsp;<button> <a href="excluirF.jsp?index=<%=index%>">Excluir</a></button>
+                        <td padding="50px">
+                            <button><a href="alterarF.jsp?index=<%=index%>">Alterar</a></button></td>
+                        &emsp;<td><button> <a href="excluirF.jsp?index=<%=index%>">Excluir</a></button>
                         </td>                  
                                                  
                     </tr>
                     <%}%>              
            
-            </table></h6>
-                    
+            </table></h5>
+        </div>
                     <br/>
         
        <table>

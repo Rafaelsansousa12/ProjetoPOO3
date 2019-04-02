@@ -41,7 +41,7 @@
            <br/>
            <br/>
            <br/>
-           <h4 style="position: fixed; bottom: 10%; margin-left: 37%;  color: blue;">-- Desenvolvido por Alex Sandro , Daianne  e Rafael --</h4>
+           <h4 style="position: fixed; bottom: 10%; margin-left: 37%;  color: #FE2E2E;">-- Desenvolvido por Alex Sandro , Daianne  e Rafael --</h4>
        </div>
        
         

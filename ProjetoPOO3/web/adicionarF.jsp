@@ -30,7 +30,7 @@
         <hr/>
         <h1><ul style="background-color:greenyellow"><p class="alinha">Adicionar Fornecedor</p></ul></h1>
         <h3><p class="alinha"> Preencha os campos :</p></h3>
-        <form action="listarF.jsp">
+         <form action="listarF.jsp">
             
             <table >
                 
@@ -61,7 +61,7 @@
                     <input type="submit" name="adicionar" value="Não"/>  </h3>         
             </div>
             <br/>
-        </form> 
+            </form> 
     </body>
     <%@include file="WEB-INF/jspf/footer.jspf" %>
 </html>
