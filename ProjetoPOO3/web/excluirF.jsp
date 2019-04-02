@@ -14,7 +14,9 @@
         <title>Excluir - Fornecedor</title>
          <%@include file="WEB-INF/jspf/header.jspf" %>
          <style>p.alinha{padding-left: 1.8em }
-           
+            
+         body {background-color: #BDBDBD};
+         
         </style>
     </head>
     </head>

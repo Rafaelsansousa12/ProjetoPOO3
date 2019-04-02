@@ -64,13 +64,14 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <%@include file="WEB-INF/jspf/header.jspf" %>
         <title>Listar - Clientes</title>
-        <style>
-            p.alinha{padding-left: 1.8em }
-           
+        <style>p.alinha{padding-left: 1.8em }
+            
+         body {background-color: #BDBDBD};
+         
         </style>
     </head>
     
-    <body>
+    <body >
         <br/>
         <br/>
         <br/>
@@ -87,7 +88,7 @@
                 <th width='120px'>E-mail</th>
                 <th width='60px'>Telefone</th>
                 <th width='120px'>Endereço</th>
-                <th width='100px'>Editar</th>
+               <th width='100px' colspan="2">Editar</th>
             </tr>
             
             <%for (Cliente c: BD.getClientes()) {%>
@@ -103,8 +104,8 @@
                         <td><%=c.getEndereco() %></td>
                         
                         <td padding='5px'>
-                            <button><a href="alterarC.jsp?index=<%=index%>">Alterar</a></button>
-                            &ensp; <button><a href="excluirC.jsp?index=<%=index%>">Excluir</a></button>
+                            <button><a href="alterarC.jsp?index=<%=index%>">Alterar</a></button></td>
+                        &ensp;<td> <button><a href="excluirC.jsp?index=<%=index%>">Excluir</a></button>
                         </td>                  
                                                  
                     </tr>

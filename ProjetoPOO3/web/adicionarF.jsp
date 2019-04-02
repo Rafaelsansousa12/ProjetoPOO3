@@ -18,8 +18,10 @@
         <%@include file="WEB-INF/jspf/header.jspf" %>
         
         <title>Adicionar  - Fornecedor</title>
-        <style>p.alinha{padding-left: 1.8em }
-           
+       <style>p.alinha{padding-left: 1.8em }
+            
+         body {background-color: #BDBDBD};
+         
         </style>
     </head>
     

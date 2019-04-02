@@ -13,9 +13,10 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Alterar - Cliente</title>
         <%@include file="WEB-INF/jspf/header.jspf" %> 
-        <style>
-            p.alinha{padding-left: 1.8em }
-           
+        <style>p.alinha{padding-left: 1.8em }
+            
+         body {background-color: #BDBDBD};
+         
         </style>
     </head>
     

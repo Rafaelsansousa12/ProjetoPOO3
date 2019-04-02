@@ -13,10 +13,11 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
          <%@include file="WEB-INF/jspf/header.jspf" %>
         <title>Alterar - Fornecedor</title>
-         <style>
-            p.alinha{padding-left: 1.8em }
-           
-        </style>   
+         <style>p.alinha{padding-left: 1.8em }
+            
+         body {background-color: #BDBDBD};
+         
+        </style> 
     </head>
     
     <body>

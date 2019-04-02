@@ -64,13 +64,14 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <%@include file="WEB-INF/jspf/header.jspf" %>
         <title>Listar - Fonecedores</title>
-        <style>
-            p.alinha{padding-left: 1.8em }
-           
+       <style>p.alinha{padding-left: 1.8em }
+            
+         body {background-color: #BDBDBD};
+         
         </style>
     </head>
     
-    <body style="background-color: #CED8F6;">
+    <body >
         <br/>
         <br/>
         <br/>
