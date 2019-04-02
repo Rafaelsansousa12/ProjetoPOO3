@@ -82,13 +82,13 @@
         <h4> <table border="1" style="text-align:center; align:fixed center; cellspacing:0; cellpadding:2 solid black; margin-left: 20%;"  >
             <tr style='background-color: lightgray'>
                 <th width='40px'>Código</th>
-                 <th width='150px'>Nome</th>
+                 <th width='200px'>Nome</th>
                  <th width='75px'>CPF</th>
                  <th width='75px'>RG</th>
                 <th width='120px'>E-mail</th>
-                <th width='60px'>Telefone</th>
-                <th width='120px'>Endereço</th>
-               <th width='100px' colspan="2">Editar</th>
+                <th width='90px'>Telefone</th>
+                <th width='200px'>Endereço</th>
+               <th width='50px' colspan="2">Editar</th>
             </tr>
             
             <%for (Cliente c: BD.getClientes()) {%>
@@ -103,7 +103,7 @@
                         <td><%=c.getFone() %></td>
                         <td><%=c.getEndereco() %></td>
                         
-                        <td padding='5px'>
+                        <td padding='3px'>
                             <button><a href="alterarC.jsp?index=<%=index%>">Alterar</a></button></td>
                         &ensp;<td> <button><a href="excluirC.jsp?index=<%=index%>">Excluir</a></button>
                         </td>                  

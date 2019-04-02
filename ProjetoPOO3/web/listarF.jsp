@@ -80,7 +80,7 @@
         <br/>
         
         <div>
-        <h5><table border="1" style="text-align:center; align=center; cellspacing=0; cellpadding=2 solid black; margin-left: 20%;" >
+        <h4><table border="1" style="text-align:center; align=center; cellspacing=0; cellpadding=2 solid black; margin-left: 20%;" >
             <tr style='background-color: lightgray'>
                 <th width='40px'>Código</th>
                  <th width='200px'>Nome</th>
@@ -113,7 +113,7 @@
                     </tr>
                     <%}%>              
            
-            </table></h5>
+            </table></h4>
         </div>
                     <br/>
         
